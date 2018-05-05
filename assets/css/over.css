@@ -25,7 +25,7 @@ nav .container a {
     margin: 0;
 }
 nav a img {
-    width: 80px !important;
+    width: 250px !important;
 }
 #left {
     left: 0;
@@ -323,7 +323,7 @@ nav a img {
 }
 #service {
     height: 100vh;
-    padding-top: 90px;
+    padding-top: 100px;
 }
 #gallery-slider {
     height: 100% !important;
@@ -457,4 +457,104 @@ nav a img {
 
 .owl-carousel .owl-item img {
     border: none;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 3px;
+    max-width: 380px;
+    margin: 0 auto;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    transition: all 600ms ease-in-out;
+    visibility: visible;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.modal h1 {
+    color: #323a46;
+    font-size: 28px;
+    font-weight: 200;
+    padding-top: 15px;
+    text-align: center;
+}
+.modal label {
+    color: #f1b561;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+}
+
+.modal .input input[type="button"] {
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    width: 50%;
+    transition: all 300ms ease-out;
+}
+.modal .input input[type="button"]:first-of-type {
+    background-color: #f2f2f2;
+    color: #b4bac4;
+}
+.modal .input input[type="button"]:first-of-type:hover {
+    background-color: #323a46;
+    color: white;
+}
+.modal .input input[type="button"]:last-of-type {
+    background-color: #f1b561;
+    color: #FFF;
+}
+.modal .input input[type="button"]:last-of-type:hover {
+    background-color: #323a46;
+    color: white;
 }

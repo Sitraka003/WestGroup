@@ -59,7 +59,7 @@
 		<!-- START NAVBAR -->
 		  <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation">
 			<div class="container">
-			  <a class="navbar-brand" href="index.html"><img src="assets/img/LOGO%20750x750%20blanc.png" alt=""></a>
+			  <a class="navbar-brand" href="index.html"><img src="assets/img/DOC%20TROC.png" alt=""></a>
 			  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="icon-menu"></i>
 			  </button>
@@ -142,6 +142,16 @@
 					</div>
 				</div>
 			</div>
+            <!-- The Modal -->
+            <div class="modal">
+                <h1>Your Account</h1>
+                <input placeholder="Your address" type="text" />
+                <input placeholder="Your password" type="text" />
+                <div class="input">
+                    <input type="button" value="REGISTER"/>
+                    <input type="button" value="SIGN IN"/>
+                </div>
+            </div>
 			<div id="gallery-slider" class="row owl-carousel">
 				<div class="single_gallery">
 					<div class="container">
@@ -1136,6 +1146,28 @@
                 $.scrollify({
                     section : ".scroll-sec",
                 });
+            });
+
+
+            $('.hovereffect2 a.info').click(function() {
+                $('.modal').css({
+                    'visibility': 'visible',
+                    'opacity': '1',
+                });
+            });
+
+            $(document).mouseup(function(e) {
+
+                var container = $(".modal");
+
+                if (!container.is(e.target) // if the target of the click isn't the container...
+                    && container.has(e.target).length === 0) // ... nor a descendant of the container
+                {
+                    $('.modal').css({
+                        'visibility': 'hidden',
+                        'opacity': '0',
+                    });
+                }
             });
 		</script>
 
